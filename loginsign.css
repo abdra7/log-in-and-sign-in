@@ -1,0 +1,135 @@
+/* General Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #6e3dc7, #3a1a8c);
+  color: #fff;
+}
+
+/* Form Container */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #171717;
+  padding: 20px 30px;
+  border-radius: 25px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.form:hover {
+  transform: scale(1.05);
+}
+
+/* Form Heading */
+#heading {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #f4f4f4;
+}
+
+/* Input Field */
+.field {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  background-color: #252525;
+  border-radius: 25px;
+  margin-bottom: 15px;
+}
+
+.input-icon {
+  margin-right: 10px;
+  fill: #888;
+  width: 20px;
+  height: 20px;
+}
+
+.input-field {
+  flex: 1;
+  background: none;
+  border: none;
+  color: #ddd;
+  outline: none;
+  font-size: 1rem;
+}
+
+/* Buttons */
+.btn {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.button1,
+.button2 {
+  flex: 1;
+  padding: 10px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-size: 1rem;
+}
+
+.button1 {
+  background-color: #3a1a8c;
+  color: #fff;
+}
+
+.button1:hover {
+  background-color: #5e2cb6;
+}
+
+.button2 {
+  background-color: #444;
+  color: #fff;
+}
+
+.button2:hover {
+  background-color: #666;
+}
+
+/* Forgot Password */
+.button3 {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  color: #888;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 0.9rem;
+}
+
+.button3:hover {
+  color: #bbb;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .form {
+    width: 90%;
+    padding: 20px;
+  }
+
+  #heading {
+    font-size: 1.2rem;
+  }
+
+  .button1,
+  .button2 {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}
